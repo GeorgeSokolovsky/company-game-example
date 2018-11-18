@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IT Company Gaming</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Start journey with your own company</div>
+        <div class="company">
+            <div class="company_name">
+                <label for="company-name"
+                       class="company_name__label">Company name</label>
+                <input id="company-name"
+                       class="company_name__input"
+                       placeholder="Enter company name">
+            </div>
+            <div class="company_budget">
+                <label for="company-budget"
+                       class="company_budget__label">Company budget</label>
+                <input id="company-budget"
+                       type="number"
+                       class="company_budget__input"
+                       placeholder="Enter company start budget">
+            </div>
+
+            <div class="toggle">
+                <button class="toggle-button">Start</button>
+            </div>
+
+            <div class="stop-reason"></div>
+        </div>
+
+        <div class="turn"></div>
+
+        <div class="budget">
+            Бюджет равен:
+            <div class="budget-value"></div>
+        </div>
+
+        <div class="game">
+            <div class="game-log"></div>
+
+            <div class="game-projects">
+                <div class="game-projects--form">
+                    <div class="game-projects--form_name">
+                        <label for="project-name">Project name</label>
+                        <input id="project-name"
+                               class="game-project--form_name__input"
+                               placeholder="Enter project name">
+                    </div>
+                    <div class="game-project--form_cost">
+                        <label for="project-cost">Project cost</label>
+                        <input id="project-cost"
+                               type="number"
+                               class="game-project--form_cost__input"
+                               placeholder="Enter project cost">
+                    </div>
+                    <div class="game-project--form_lines">
+                        <label for="project-lines">Project requires lines</label>
+                        <input id="project-lines"
+                               class="game-project--form_lines__input"
+                               placeholder="Enter project lines">
+                    </div>
+
+                    <button class="game-project--form_add">
+                        Add project
+                    </button>
+                </div>
+                <div class="game-projects--list"></div>
+            </div>
+
+            <div class="game-managers">
+                <div class="game-managers--form">
+                    <div class="game-managers--form_name">
+                        <label for="manager-name">Manager name</label>
+                        <input id="manager-name"
+                               class="game-managers--form_name__input"
+                               placeholder="Enter manager name">
+                    </div>
+                    <div class="game-managers--form_level">
+                        <label for="manager-exp">Manager experience</label>
+                        <input id="manager-exp"
+                               class="game-managers--form_experience__input"
+                               placeholder="Enter managers experience">
+                    </div>
+                    <button class="game-managers--form_add">
+                        Add Manager
+                    </button>
+                </div>
+                <div class="game-managers--lists">
+                    <div class="game-managers__free"></div>
+                    <div class="game-managers__busy"></div>
+                </div>
+            </div>
+
+            <div class="game-developers">
+                <div class="game-developers--form">
+                    <div class="game-developers--form_name">
+                        <label for="developer-name">Developer name</label>
+                        <input id="developer-name"
+                               class="game-developers--form_name__input"
+                               placeholder="Enter developer name">
+                    </div>
+                    <button class="game-developers--form_add">
+                        Add Developer
+                    </button>
+                </div>
+                <div class="game-developers--lists">
+                    <div class="game-developers__free"></div>
+                    <div class="game-developers__busy"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="utils/utils.js"></script>
+    <script src="dom/Renderer.js"></script>
+    <script src="domain/Developer.js"></script>
+    <script src="domain/Manager.js"></script>
+    <script src="domain/Project.js"></script>
+    <script src="domain/Company.js"></script>
+    <script src="game/Game.js"></script>
+    <script src="Runner.js"></script>
+</body>
+</html>

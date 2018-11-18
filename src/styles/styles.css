@@ -1,0 +1,49 @@
+.company {
+    display: flex;
+    align-items: center;
+}
+
+.company_name {
+    display: flex;
+    flex-direction: column;
+    margin-right: 12px;
+}
+
+.company_name__label {
+    padding-bottom: 4px;
+}
+
+.company_budget {
+    display: flex;
+    flex-direction: column;
+    margin-right: 12px;
+}
+
+.company_budget__label {
+    padding-bottom: 4px;
+}
+
+.toggle-button {
+    border-radius: 10%;
+    margin-right: 12px;
+}
+
+.budget {
+    margin: 12px;
+}
+
+.turn {
+    margin: 12px;
+}
+
+.budget-value {
+    padding: 4px;
+}
+
+.game {
+    display: flex;
+}
+
+.value {
+    padding: 8px;
+}
